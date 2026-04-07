@@ -1,0 +1,7 @@
+### Mount (Hono)
+
+### Elysia Route
+GET http://localhost:3000/
+
+### Hono Route (Mounted)
+GET http://localhost:3000/hono

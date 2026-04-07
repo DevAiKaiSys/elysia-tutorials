@@ -8,6 +8,7 @@
   "dependencies": {
     "@elysiajs/openapi": "^1.4.14",
     "elysia": "latest",
+    "hono": "^4.12.12",
     "zod": "^4.3.6"
   },
   "devDependencies": {
