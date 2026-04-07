@@ -1,0 +1,10 @@
+### Plugin
+
+### Home
+GET http://localhost:3000/
+
+### User Profile (from plugin)
+GET http://localhost:3000/profile
+
+### User Settings (from plugin)
+GET http://localhost:3000/settings
