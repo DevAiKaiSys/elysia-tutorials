@@ -1,0 +1,12 @@
+### End to End Type Safety
+
+### Hello Elysia
+GET http://localhost:3000/
+
+### Post data
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "name": "Arty"
+}
