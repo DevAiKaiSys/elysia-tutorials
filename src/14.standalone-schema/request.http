@@ -1,0 +1,44 @@
+### Standalone Schema (Zod & Elysia T)
+
+### Valid Request
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Arty",
+    "age": 20
+}
+
+### Invalid Request (Missing name)
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "age": 20
+}
+
+### Invalid Request (Missing age)
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Arty"
+}
+
+### Invalid Request (Age as string)
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Arty",
+    "age": "20"
+}
+
+### Invalid Request (Age < 15)
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Arty",
+    "age": 10
+}
