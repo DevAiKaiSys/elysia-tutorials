@@ -1,18 +1,34 @@
-import { Elysia, t } from 'elysia'
+import { Elysia, t } from "elysia";
 
-new Elysia()
-	.get('/', ({ cookie: { visit } }) => {
-		visit.value ??= 0
-		visit.value++
+new Elysia({
+  cookie: {
+    secret: "Fischl von Luftschloss Narfidort",
+  },
+})
+  .get(
+    "/",
+    ({ cookie: { visit } }) => {
+      visit.value ??= 0;
+      visit.value++;
 
-		visit.httpOnly = true
+      visit.httpOnly = true;
 
-		return `You have visited ${visit.value} times`
-	}, {
-		cookie: t.Object({
-			visit: t.Optional(
-				t.Number()
-			)
-		})
-	})
-	.listen(3000)
+      return `You have visited ${visit.value} times`;
+    },
+    {
+      cookie: t.Cookie(
+        {
+          visit: t.Optional(t.Number()),
+        },
+        {
+          secrets: "Fischl von Luftschloss Narfidort",
+          sign: ["visit"],
+        },
+      ),
+    },
+  )
+  .get("/clear", ({ cookie: { visit } }) => {
+    visit.remove();
+    return `Cookie removed`;
+  })
+  .listen(3000);
