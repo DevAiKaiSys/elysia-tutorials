@@ -1,0 +1,17 @@
+### Validation
+
+### Valid Request
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Elysia"
+}
+
+### Invalid Request (Missing name)
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "age": 18
+}

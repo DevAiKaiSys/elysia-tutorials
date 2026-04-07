@@ -1,0 +1,9 @@
+### Your First Route
+
+GET http://localhost:3000/elysia
+
+### Path Parameters
+GET http://localhost:3000/friends/John
+
+### Wildcard
+GET http://localhost:3000/flame-chasers/Kevin

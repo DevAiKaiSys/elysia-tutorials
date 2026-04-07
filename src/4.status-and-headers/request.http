@@ -1,0 +1,7 @@
+### Status and Headers
+
+### Returns 418 I'm a teapot
+GET http://localhost:3000/
+
+### Redirect to ElysiaJS docs
+GET http://localhost:3000/docs
