@@ -1,0 +1,20 @@
+### Macro (isFibonacci)
+
+### Valid Request (Fibonacci number)
+POST http://localhost:3000/
+Content-Type: application/json
+
+13
+
+### Invalid Request (Not a Fibonacci number)
+POST http://localhost:3000/
+Content-Type: application/json
+
+10
+
+### Invalid Request (Not a number)
+### *** ### t from "elysia"; not work. used Zod instead of t from "elysia"
+POST http://localhost:3000/
+Content-Type: application/json
+
+"8"
