@@ -1,0 +1,34 @@
+### Validation Error
+
+### Valid Request
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "age": 20
+}
+
+### Invalid Request (Age is string)
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "age": "20"
+}
+
+### Invalid Request (Missing age)
+POST http://localhost:3000/
+Content-Type: application/json
+
+{}
+
+### Invalid Request (Body is not object)
+POST http://localhost:3000/
+Content-Type: text/plain
+
+"Hello World"
+
+
+### Invalid Request (request Body)
+POST http://localhost:3000/
+Content-Type: application/json
