@@ -1,0 +1,5 @@
+### Cookie
+
+### Get visit count (Subsequent requests will send the cookie automatically in some tools, or you can manually add it)
+### Note: In VS Code REST Client, it often handles cookies if they are returned by previous requests in the same file.
+GET http://localhost:3000/
