@@ -1,0 +1,11 @@
+### Extends Context
+
+### Valid Request
+GET http://localhost:3000/profile?age=20
+
+### Invalid Request (Age < 15)
+### *** ### age: t.Number({ min: 15 }), not work. used Zod instead of t from "elysia"
+GET http://localhost:3000/profile?age=10
+
+### Invalid Request (Missing Age)
+GET http://localhost:3000/profile
