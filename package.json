@@ -9,10 +9,15 @@
     "@elysiajs/openapi": "^1.4.14",
     "elysia": "latest",
     "hono": "^4.12.12",
+    "jest": "^30.3.0",
+    "vitest": "^4.1.2",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@jest/globals": "^30.3.0",
+    "@types/jest": "^30.0.0",
+    "bun-types": "latest",
+    "ts-jest": "^29.4.9"
   },
   "module": "src/index.js"
 }
