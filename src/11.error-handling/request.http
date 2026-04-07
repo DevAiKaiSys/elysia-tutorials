@@ -1,0 +1,7 @@
+### Error Handling Tutorial
+
+### Trigger Custom Error (418 I'm a teapot)
+GET http://localhost:3000/
+
+### Trigger Not Found (Should return "Hi there")
+GET http://localhost:3000/any-missing-route
