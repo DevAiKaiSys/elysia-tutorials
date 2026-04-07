@@ -1,0 +1,15 @@
+### Encapsulation
+
+### Get Profile (Needs age and name)
+### Should return "Hi!" if age >= 18 and name is present
+GET http://localhost:3000/profile?name=Elysia&age=18
+
+### Rename (Needs age and name)
+### Should return "Ok! XD" if age >= 18 and name is present
+PATCH http://localhost:3000/rename?name=Elysia&age=20
+
+### Forbidden (Age < 18)
+GET http://localhost:3000/profile?name=Elysia&age=17
+
+### Unauthorized (Missing name)
+GET http://localhost:3000/profile?age=18

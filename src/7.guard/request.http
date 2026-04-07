@@ -1,4 +1,4 @@
-### Lifecycle
+### Guard
 
 ### Authorized Request
 GET http://localhost:3000/auth?name=Elysia
