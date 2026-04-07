@@ -1,0 +1,10 @@
+### Lifecycle
+
+### Authorized Request
+GET http://localhost:3000/auth?name=Elysia
+
+### Unauthorized Request (Missing name query)
+GET http://localhost:3000/auth
+
+### Profile with name
+GET http://localhost:3000/profile?name=John
